@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header class="fcontainer">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/logo1.png" alt="">
+            </div>
+        <div class="navigation">
+            <a href="#home" class="navlist">Home</a>
+            <a href="#pakage" class="navlist">Our Package</a>
+            <a href="#profil" class="navlist">Call Us</a>
+        </dib>
+        </nav>
+    </header>
+    <!-- banner section -->
+    <section id="home" class="hero">
+        <div class="judul">
+            <h1 >Candra E-Groceries<br> Shop</h1>
+            <h3 class="desjudul">Every Day with best ingredients</h3>
+        </div>
+    </section>
+    <section id="profil">
+        <div class="container">
+            <div class="profil">
+                <div class="profil-main">
+                    <img class="profil-img" src="image/buah.png" alt="">
+                    <img class="profil-img" src="image/sembako.png" alt="">
+                    <img class="profil-img" src="image/sayur.png" alt="">
+
+
+
+
+                    <div class="profil-content">
+                        <h3>Memungkinkan konsumen untuk menikmati kenyamanan 
+                            berbelanja tanpa harus meninggalkan rumah. 
+                            Dengan akses mudah melalui platform daring, pelanggan 
+                            dapat menjelajahi dan memesan produk-produk kebutuhan 
+                            sehari-hari dengan cepat dan efisien.</h3>
+                    </div>
+
+                    <div class="content-desk">
+                            <p class="text-desk"><i class="nomor">1 </i> menyajikan pilihan bahan makanan yang luas</p>
+                            <p class="text-desk"><i class="nomor">2 </i> pelanggan dapat menghemat waktu saat berbelanja</p>
+                            <p class="text-desk"><i class="nomor">3</i> memastikan produk-produk segar sampai ke pintu pelanggan</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div class="card">
+                        <div class="card-judul">
+                            <h4>Contact Us</h4>
+                            
+                        </div>
+                        <div class="card-desk">
+                            <p>We will contact you within 24 hours after receiving your input.</p>
+                        </div>
+                        <form id="contactUs" name="contactUs" onsubmit="return validateForm();">
+                            <div class="input">
+                                <label for="name">Your Name:</label>
+                                <input id="name" name="name" type="text" placeholder="First and last name" />
+                            </div>
+                            <div class="input">
+                                <label for="email">Email Address:</label>
+                                <input id="email" name="email" type="email" placeholder="example@mail.com" />
+                            </div>
+                            <div class="input">
+                                <label for="interest">What are you interested in?</label>
+                                <select id="interest" name="interest">
+                                    <option  disabled selected hidden>Select your option</option>
+                                        <option>Sayur</option>
+                                        <option>Buah</option>
+                                        <option>Sembako</option>                  
+                                </select>
+                            </div>
+                            <input class="button" onclick="validateForm()" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>             
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section package -->
+    <section id="pakage" class="main-banner">
+        
+        <div class="banner-pack">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bbbbbb" fill-opacity="1" d="M0,128L30,122.7C60,117,120,107,180,90.7C240,75,300,53,360,58.7C420,64,480,96,540,128C600,160,660,192,720,186.7C780,181,840,139,900,122.7C960,107,1020,117,1080,128C1140,139,1200,149,1260,138.7C1320,128,1380,96,1410,80L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+            Our Package
+        </div>
+        <div class="card-group">
+            <div class="cardd">
+                <img src="image/1.jpg" alt="">
+                <div class="cardd-layer"></div>
+                <div class="cardd-info">
+                    <h1>Sembako</h1>
+                        <p>
+                            berbagai sembako berkualitas tinggi untuk memenuhi kebutuhan dapur Anda sehari-hari. 
+                            Dengan harga yang terjangkau dan layanan terbaik,
+                        </p>
+                </div>
+            </div>
+            <div class="cardd">
+                <img src="image/2.jpg" alt="">
+                <div class="cardd-layer"></div>
+                <div class="cardd-info">
+                    <h1>Sayur</h1>
+                        <p>
+                            keanekaragaman produk segar dan berkualitas tinggi memenuhi kebutuhan harian Anda. Kami bangga 
+                            menyajikan koleksi sayuran segar dan sembakau terbaik, yang dipilih langsung dari petani terpercaya.
+                        </p>
+                </div>
+            </div>
+            <div class="cardd">
+                <img src="image/3.jpg" alt="">
+                <div class="cardd-layer"></div>
+                <div class="cardd-info">
+                    <h1>Buah</h1>
+                        <p>
+                            beragam buah berkualitas tinggi, 
+                            diperoleh langsung dari kebun yang terpilih. 
+                            Setiap buah yang kami sediakan 
+                            dipilih dengan cermat untuk memberikan pengalaman 
+                            rasa terbaik kepada pelanggan kami.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- clossing -->
+    <section class="penutup">
+        <div class="penutup-main">
+            <h1>Terima Kasih Sudah Berkunjung</h1>
+            <p>Terima kasih telah mengunjungi website kami.
+                Kami berkomitmen untuk memberikan pengalaman<br> yang 
+                tak terlupakan dalam memenuhi kebutuhan Anda. 
+                Sebelum Anda <br>melanjutkan perjalanan online Anda</p>
+        </div>
+        <div>
+            <input class="button2" type="submit" value="MENU">
+        </div>
+    </section>
+<!-- footer -->
+<section class="footer">
+    <div class="logo2">
+        <img src="image/logo1.png" alt="">
+    </div>
+    <div class="footer-text">
+        <h5>Terms of Service</h5>
+        <h5>Privacy Police</h5>
+    </div>
+    <h5>@2019 | Candra</h5>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>
