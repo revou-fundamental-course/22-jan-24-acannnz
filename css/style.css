@@ -9,10 +9,12 @@ body {
 .fcontainer {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 .navbar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 80px;
@@ -23,12 +25,14 @@ body {
 
 .logo img {
     width: 100px;
+    margin: 20px 0;
     margin-left: 50px;
 }
 
 .navigation {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-right: 30px;
     margin-bottom: 10px;
@@ -111,7 +115,7 @@ body {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     gap: 40px;
 }
 
@@ -382,7 +386,7 @@ select {
     padding: 3px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
     /* Navbar */
     .navbar {
@@ -436,17 +440,18 @@ select {
 
     .profil-main img {
         width: 100%;
-        margin-left: 0;
+
     }
 
     .profil-content {
         width: 100%;
-        margin-left: 0;
+
     }
 
     .text-desk {
         margin-left: 0;
     }
+
 
     /* Our Package Section */
     .main-banner {
